@@ -19,16 +19,16 @@ public class App
 
             if (choice == 1) {
                 System.out.print("Anna uusi PIN-koodi: ");
-                String newPassword = sc.next();
-                safe.changePassword(newPassword);
+                String newPincode = sc.next();
+                safe.changePassword(newPincode);
             } else if (choice == 2) {
                 System.out.print("Anna kansioon lisättävä tieto: ");
                 String data = sc.next();
                 safe.addToFolder(data);
             } else if (choice == 3) {
                 System.out.print("Anna PIN-koodi: ");
-                String enteredPassword = sc.next();
-                ArrayList<String> folder = safe.listFolder(enteredPassword);
+                String enteredPincode = sc.next();
+                ArrayList<String> folder = safe.listFolder(enteredPincode);
                 if (folder != null) {
                     for (String data : folder) {
                         System.out.println(data);
