@@ -18,7 +18,7 @@ public class App
             int choice = sc.nextInt();
 
             if (choice == 1) {
-                System.out.print("Anna uusi PIN-koodi: ");
+                System.out.println("Anna uusi PIN-koodi: ");
                 String newPincode = sc.next();
                 safe.changePassword(newPincode);
             } else if (choice == 2) {
@@ -34,7 +34,7 @@ public class App
                         System.out.println(data);
                     }
                 } else {
-                    System.out.println("Väärä PIN-koodi.");
+                    System.out.println("Väärä PIN-koodi!");
                 }
             } else if (choice == 0) {
                 System.out.println("Kiitos ohjelman käytöstä.");
