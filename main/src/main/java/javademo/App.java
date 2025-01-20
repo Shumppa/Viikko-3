@@ -22,11 +22,11 @@ public class App
                 String newPincode = sc.next();
                 safe.changePassword(newPincode);
             } else if (choice == 2) {
-                System.out.print("Anna kansioon lisättävä tieto: ");
+                System.out.println("Anna kansioon lisättävä tieto: ");
                 String data = sc.next();
                 safe.addToFolder(data);
             } else if (choice == 3) {
-                System.out.print("Anna PIN-koodi: ");
+                System.out.println("Anna PIN-koodi: ");
                 String enteredPincode = sc.next();
                 ArrayList<String> folder = safe.listFolder(enteredPincode);
                 if (folder != null) {

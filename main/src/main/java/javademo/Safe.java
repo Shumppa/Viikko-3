@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 public class Safe {
     private String pinCode;
-    private ArrayList<String> safeFolder;
+    private ArrayList<String> Safe;
 
     public Safe(String password) {
         this.pinCode = password;
-        this.safeFolder = new ArrayList<String>();
+        this.Safe = new ArrayList<String>();
     }
 
     public void changePassword(String newPincode) {
@@ -16,12 +16,12 @@ public class Safe {
     }
 
     public void addToFolder(String data) {
-        safeFolder.add(data);
+        Safe.add(data);
     }
 
     public ArrayList<String> listFolder(String enteredPincode) {
         if (enteredPincode.equals(pinCode)) {
-            return safeFolder;
+            return Safe;
         } else {
             return null;
         }
